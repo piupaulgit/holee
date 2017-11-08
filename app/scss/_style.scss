@@ -1,0 +1,16 @@
+.fixed-top{
+	// @include media-breakpoint-down(sm){
+	// 	display: none;
+	// }
+}
+
+html {
+    font-size: 62.5%;
+}
+body{
+	font-size: rem(16);
+}
+
+ul{
+	padding-left: 0px;
+}

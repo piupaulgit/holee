@@ -1,0 +1,21 @@
+header{
+	.top-search{
+		span{
+			&.search_icon{
+				height: 50px;
+				width: 50px;
+				border-radius: 50%;
+				background-color: blue;
+				display: block;
+				color: #fff;
+				text-align: center;
+				line-height: rem(47);
+				margin-left: 20px;
+				cursor: pointer;
+				&:hover{
+					background-color: red;
+				}
+			}
+		}
+	}
+}
