@@ -4,6 +4,9 @@ img{
 main{
     padding: 50px 0;
 }
+a:hover, a:focus, a:active{
+    text-decoration: none;
+}
 .section-heading{
     font-size: 12px;
     color: #000000;
@@ -84,6 +87,9 @@ ul.products {
                 font-size: 16px;
                 text-transform: uppercase;
                 margin: 25px 0 15px;
+                a{
+                    color: $black;
+                }
             }
             .price{
                 color: $blue;
