@@ -11,3 +11,22 @@ $baseFontSize: 10;
 
 	@return $pixels / $context * 1rem;
 }
+
+
+// variables
+
+// colors
+$white: #ffffff;
+$black: #000000;
+$grey: #f3f3f3;
+
+$blue: #1e00f7;
+$red: #e40000;
+
+
+// fonts
+$mainFont: 'Poppins', sans-serif;
+
+$font-weight__regular: 400;
+$font-weight__semiBold: 600;
+$font-weight__black: 900;

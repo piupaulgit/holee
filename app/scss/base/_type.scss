@@ -1,0 +1,11 @@
+.sale{
+	display: inline-block;
+	padding: rem(9) rem(20);
+	background-color: $red;
+	color: $white;
+	text-transform: uppercase;
+	font-size: rem(15);
+	&:hover{
+		background: $blue;
+	}
+}
