@@ -1,0 +1,75 @@
+.footer-top{
+	background: $grey;
+	margin-top: rem(166) ;
+	position: relative;
+	&:after{
+		height: 200px;
+		width: 200px;
+		position: absolute;
+		top: -125px;
+		left: 50%;
+		transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		-o-transform: translateX(-50%);
+		-moz-transform: translateX(-50%);
+		content: '';
+		background: url('../images/circle-design.png');
+		background-size: cover;
+		margin-top: rem(50);
+	}
+	.footer-top-left{
+		position: relative;
+		height: 100%;
+		min-height: 350px;
+		padding-top: rem(130);
+		img{
+			right: rem(70);
+			position: absolute;
+			bottom: 0;
+		}
+	}
+	.footer-top-right{
+		position: relative;
+		min-height: 350px;
+		padding-top: rem(130);
+		height: 100%;
+		img{
+			left: 70px;
+			position: absolute;
+			bottom: 0;
+		}
+	}
+	a{
+		&:hover{
+			text-decoration: none;
+			h2{
+				color: $red;
+			}
+			h6{
+				color: $red;
+			}
+		}
+	}
+	h2{
+		font-size: rem(60);
+		color: $blue;
+		font-weight: $font-weight__black;
+		text-transform: uppercase;
+		position: relative;
+		z-index: 9999;
+		line-height: 50px;
+		span{
+			font-weight: $font-weight__light;
+		}
+	}
+	h6{
+		font-size: rem(14);
+		text-transform: uppercase;
+		color: $blue;
+		font-weight: $font-weight__semiBold;
+		letter-spacing: rem(10);
+		z-index: 99;
+		position: relative;
+	}
+}
