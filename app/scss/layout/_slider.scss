@@ -1,0 +1,111 @@
+img{
+    max-width: 100%;
+}
+main{
+    padding: 50px 0;
+}
+.section-heading{
+    font-size: 12px;
+    color: #000000;
+    letter-spacing: 5px;
+    word-spacing: 4px;
+    margin-bottom: 65px;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        width: 80px;
+        height: 1px;
+        background: $black;
+        top: -27px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+}
+.product-wrapper{
+    padding: 50px 0;
+}
+ul.products {
+    margin: 0;
+    padding: 0;
+    clear: both;
+    li{
+        float: left;
+        text-align: center;
+        margin-bottom: 100px;
+        .product-img{
+            position: relative;
+            display: inline-block;
+            max-width: 290px;
+            margin: 0 auto;
+            img{
+                margin: 0 auto;
+                max-height: 211px;
+                transition: opacity 0.4s;
+            }
+            .sale{
+                position: absolute;
+                top: 20px;
+                right: -25px;
+            }
+            .product-link{
+                position: absolute;
+                top: 50%;
+                left: 0;
+                right: 0;
+                transform: translateY(-50%);
+                opacity: 0; 
+                i{
+                    font-size: 25px;
+                    background: rgba(0,0,0,0.9);
+                    color: #fff;
+                    padding: 15px;
+                    border-radius: 50%;
+                    transition: color 0.3s;
+                }
+                &:hover{
+                    i{
+                        color: #e40000;
+                    }
+                }
+            }
+            &:hover{
+                img{
+                    opacity: 0.4;
+                }
+                .product-link{
+                    opacity: 1;
+                }                
+            }
+        }
+        .product-detail{
+            h3{
+                font-size: 16px;
+                text-transform: uppercase;
+                margin: 25px 0 15px;
+            }
+            .price{
+                color: $blue;
+                ins{
+                    text-decoration: none;
+                    margin-left: 8px;
+                }
+                del{
+                    color: #868585;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    &.columns-3{
+        li{
+            width: 29.4117647059%;
+            margin-right: 5.8823529412%;
+            &:nth-child(3n+3){
+                margin-right: 0;
+            }
+        }
+    }
+}
