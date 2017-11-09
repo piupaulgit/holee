@@ -58,4 +58,30 @@ footer{
 			}
 		}
 	}
+	.right-footer{
+		.call-us{
+			font-size: rem(18);
+			color: #ababab;
+			text-transform: uppercase;	
+			font-weight: $font-weight__regular;
+			margin-bottom: 15px;
+		}
+		.footer-tel{
+			color: #f3f3f3;
+			font-size: rem(27);
+			font-weight: $font-weight__semiBold;
+		}
+		.mail-icon{
+			color: #ababab;
+			font-size: rem(22);
+		}
+		.footer-mail{
+			color: #f3f3f3;
+			font-size: rem(18);
+			text-decoration: underline;
+		}
+		.footer-tel-holder{
+			margin-bottom: rem(50);
+		}
+	}
 }
