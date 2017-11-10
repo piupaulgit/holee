@@ -16,11 +16,11 @@
 
     <!-- header -->
       <header class="header clearfix">
-        <div class="container">
+        <div class="container-fluid">
             <nav class="navbar navbar-expand-md">
                 <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="fa fa-bars" aria-hidden="true"></i>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarsExampleDefault">
@@ -34,17 +34,17 @@
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">WOMEN</a>
                       <div class="dropdown-menu" aria-labelledby="dropdown01">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="#">Manu item one</a>
+                        <a class="dropdown-item" href="#">Menu item two</a>
+                        <a class="dropdown-item" href="#">menu item three</a>
                       </div>
                     </li>
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">MEN</a>
                       <div class="dropdown-menu" aria-labelledby="dropdown01">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="#">Manu item one</a>
+                        <a class="dropdown-item" href="#">Menu item two</a>
+                        <a class="dropdown-item" href="#">menu item three</a>
                       </div>
                     </li>
                     <li class="nav-item">
@@ -54,12 +54,13 @@
                       <a class="nav-link red" href="#">sale</a>
                     </li>
                   </ul>
-                  <ul class="top-search">
-                    <form role="search">
-                      <!-- <input type="search" placeholder="Search......" name="search" class="searchbox-input" onkeyup="buttonUp();" required> -->
-                      <span class="search_icon"><i class="fa fa-search"></i></span>
-                    </form>
-                  </ul>
+                  <div class="top-search">
+                    <form class="searchbox">
+                          <input type="search" placeholder="Search......" name="search" class="searchbox-input" onkeyup="buttonUp();" required>
+                          <input type="submit" class="searchbox-submit" value="Manu one">
+                          <span class="searchbox-icon"><i class="fa fa-search"></i></span>
+                      </form>
+                  </div>
                 </div>
               </nav>
           </div>
@@ -277,7 +278,7 @@
       <footer>
           <div class="container">
             <div class="row">
-              <div class="col">
+              <div class="col-sm col-md">
                 <div class="row">
                   <div class="col">
                     <nav class="footer-nav">
@@ -306,7 +307,7 @@
                 </div>
               </div>
 
-              <div class="col-3">
+              <div class="col-sm col-md">
                 <div class="footer-middle">
                   <a href="index.html">
                     <img src="images/footer-logo.png" alt="Holee">
@@ -318,9 +319,9 @@
                 </div>
               </div>
 
-              <div class="col">
+              <div class="col-sm col-md">
                 <div class="row">
-                  <div class="col">
+                  <div class="col d-none d-md-block">
                   </div>
                   <div class="col">
                     <div class="right-footer">
