@@ -59,6 +59,9 @@ footer{
 		}
 	}
 	.right-footer{
+		@include media-breakpoint-down(sm){
+			text-align: center;
+		}
 		.call-us{
 			font-size: rem(18);
 			color: #ababab;
@@ -70,6 +73,9 @@ footer{
 			color: #f3f3f3;
 			font-size: rem(27);
 			font-weight: $font-weight__semiBold;
+			@include media-breakpoint-down(lg){
+				font-size: rem(22);
+			}
 		}
 		.mail-icon{
 			color: #ababab;

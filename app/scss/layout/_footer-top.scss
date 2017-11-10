@@ -1,12 +1,12 @@
 .footer-top{
 	background: $grey;
-	margin-top: rem(166) ;
+	margin-top: rem(80) ;
 	position: relative;
 	&:after{
-		height: 200px;
-		width: 200px;
+		height: 160px;
+		width: 160px;
 		position: absolute;
-		top: -125px;
+		top: -85px;
 		left: 50%;
 		transform: translateX(-50%);
 		-webkit-transform: translateX(-50%);
@@ -17,27 +17,61 @@
 		background: url('../images/circle-design.png');
 		background-size: cover;
 		margin-top: rem(50);
+		@include media-breakpoint-down(sm){
+			display: none;
+		}
 	}
 	.footer-top-left{
 		position: relative;
 		height: 100%;
-		min-height: 350px;
-		padding-top: rem(130);
+		min-height: 250px;
+		padding-top: rem(95);
+		@include media-breakpoint-down(md){
+			padding-top: rem(115);
+		}
+		@include media-breakpoint-down(sm){
+			padding-top: rem(20);
+			padding-bottom: rem(50);
+			text-align: center;
+			border-bottom: 1px solid #d6d6d6;
+		}
 		img{
-			right: rem(70);
+			right: rem(90);
 			position: absolute;
 			bottom: 0;
+			width: 200px;
+			@include media-breakpoint-down(sm){
+				position: static;
+				width: 160px;
+				margin-bottom: 20px;
+			}
 		}
 	}
 	.footer-top-right{
 		position: relative;
-		min-height: 350px;
-		padding-top: rem(130);
+		min-height: 250px;
+		padding-top: rem(95);
 		height: 100%;
+		padding-left: 95px;
+			@include media-breakpoint-down(md){
+				padding-top: rem(115);
+			}
+			@include media-breakpoint-down(sm){
+				padding-top: rem(20);
+				padding-left: 0px;
+				padding-bottom: rem(50);
+				text-align: center;
+			}
 		img{
-			left: 70px;
+			right: 0;
 			position: absolute;
 			bottom: 0;
+			width: 275px;
+			@include media-breakpoint-down(sm){
+				position: static;
+				margin-bottom: 20px;
+				width: 207px;
+			}
 		}
 	}
 	a{
@@ -59,6 +93,10 @@
 		position: relative;
 		z-index: 9999;
 		line-height: 50px;
+		@include media-breakpoint-down(md){
+			font-size: rem(35);
+			line-height: rem(25);
+		}
 		span{
 			font-weight: $font-weight__light;
 		}
