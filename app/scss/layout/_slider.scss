@@ -3,6 +3,7 @@ img{
 }
 main{
     padding-top: rem(50);
+}
 a:hover, a:focus, a:active{
     text-decoration: none;
 }
@@ -174,7 +175,7 @@ a:hover, a:focus, a:active{
 
 // product start
 .product-wrapper{
-    padding: 100px 0 50px 0;
+    padding: 64px 0 50px 0;
     .all-product-btn.btn{
         font-size: 13px;
         text-transform: uppercase;
@@ -190,6 +191,12 @@ a:hover, a:focus, a:active{
             border-color: blue;
             box-shadow: none;
         }
+    }
+    @include media-breakpoint-down(md){
+        padding: 30px 0 40px; 
+    }
+    @include media-breakpoint-down(sm){
+        padding: 10px 0 30px; 
     }
 }
 ul.products {
@@ -321,5 +328,4 @@ ul.products {
             }
         }
     }
-}
 }
