@@ -65,7 +65,12 @@ a:hover, a:focus, a:active{
                     border-color: #1e00f7;
                     border-radius: 0;
                     margin-left: 13%;
-                    margin-top: 39px;                    
+                    margin-top: 39px;
+                    transition: all 0.5s;
+                    &:hover, &:active, &:focus{
+                        background: red;
+                        border-color: red;
+                    }                    
                 }
             }
         }
@@ -94,42 +99,70 @@ a:hover, a:focus, a:active{
                 }
             }
         }
+        @media screen and (max-width: 1200px) {
+            .carousel-caption .banner-contet {
+                h3{
+                    font-size: 35px;
+                    line-height: 36px;
+                }
+                a.btn{
+                    margin-top: 25px;
+                }
+            }
+        }
+        @media screen and (max-width: 970px) {
+            .carousel-caption {
+                .banner-contet {
+                    left: 5%;
+                    top: 30px;
+                    width: 400px;
+                    h3{
+                        font-size: 20px;
+                        line-height: 21px;
+                    }
+                    a.btn{
+                        margin: 10px 0 0;
+                        padding: 8px 10px;
+                        width: 80px;
+                        font-size: 10px;
+                    }
+                }
+            }
+            .banner-sale{
+                font-size: 22px;
+                line-height: 19px;
+                padding: 5px 5px 12px;
+                p.off-text{
+                    font-size: 20px;
+                    span{
+                        font-size: 21px;
+                        margin: 0 0 0 5px;
+                        top: 7px;
+                    }
+                }
+            }
+        }
     }
     .carousel-control-prev, .carousel-control-next{
         display: none;
     }
     .carousel-indicators {
-        position: absolute;
-        right: 0;
-        bottom: 10px;
-        left: 230px;
-        z-index: 15;
-        display: flex;
-        justify-content: center;
-        padding-left: 0;
-        margin-right: 15%;
-        margin-left: 15%;
-        list-style: none;
-        width: 150px;
-        margin: 0;
-        bottom: 49px;
-    }
-    .carousel-indicators li {
-        position: relative;
-        flex: 0 1 auto;
-        width: 6px;
-        height: 6px;
-        margin-right: 3px;
-        margin-left: 3px;
-        text-indent: -999px;
-        background-color: #fff;
-        border: 1px solid #000;
-        border-radius: 50%;
-        cursor: pointer;
-
-        &.active {
-            background-color: #000;
-            border-color: #000;
+        // left: 230px;
+        // width: 150px;
+        // margin: 0;
+        // bottom: 49px;
+    
+        li {
+            width: 6px;
+            height: 6px;
+            background-color: #fff;
+            border: 1px solid #000;
+            border-radius: 50%;
+            cursor: pointer;
+            &.active {
+                background-color: #000;
+                border-color: #000;
+            }
         }
     }
 }
@@ -139,7 +172,7 @@ a:hover, a:focus, a:active{
 
 // product start
 .product-wrapper{
-    padding: 50px 0;
+    padding: 100px 0 50px 0;
     .all-product-btn.btn{
         font-size: 13px;
         text-transform: uppercase;

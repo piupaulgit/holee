@@ -8328,7 +8328,11 @@ a:hover, a:focus, a:active {
         border-color: #1e00f7;
         border-radius: 0;
         margin-left: 13%;
-        margin-top: 39px; }
+        margin-top: 39px;
+        transition: all 0.5s; }
+        .banner .carousel-item .carousel-caption .banner-contet a.btn:hover, .banner .carousel-item .carousel-caption .banner-contet a.btn:active, .banner .carousel-item .carousel-caption .banner-contet a.btn:focus {
+          background: red;
+          border-color: red; }
   .banner .carousel-item .banner-sale {
     color: red;
     border: 2px solid red;
@@ -8351,34 +8355,42 @@ a:hover, a:focus, a:active {
         margin: 0 0 0 21px;
         position: relative;
         top: 17px; }
+  @media screen and (max-width: 1200px) {
+    .banner .carousel-item .carousel-caption .banner-contet h3 {
+      font-size: 35px;
+      line-height: 36px; }
+    .banner .carousel-item .carousel-caption .banner-contet a.btn {
+      margin-top: 25px; } }
+  @media screen and (max-width: 970px) {
+    .banner .carousel-item .carousel-caption .banner-contet {
+      left: 5%;
+      top: 30px;
+      width: 400px; }
+      .banner .carousel-item .carousel-caption .banner-contet h3 {
+        font-size: 20px;
+        line-height: 21px; }
+      .banner .carousel-item .carousel-caption .banner-contet a.btn {
+        margin: 10px 0 0;
+        padding: 8px 10px;
+        width: 80px;
+        font-size: 10px; }
+    .banner .carousel-item .banner-sale {
+      font-size: 22px;
+      line-height: 19px;
+      padding: 5px 5px 12px; }
+      .banner .carousel-item .banner-sale p.off-text {
+        font-size: 20px; }
+        .banner .carousel-item .banner-sale p.off-text span {
+          font-size: 21px;
+          margin: 0 0 0 5px;
+          top: 7px; } }
 
 .banner .carousel-control-prev, .banner .carousel-control-next {
   display: none; }
 
-.banner .carousel-indicators {
-  position: absolute;
-  right: 0;
-  bottom: 10px;
-  left: 230px;
-  z-index: 15;
-  display: flex;
-  justify-content: center;
-  padding-left: 0;
-  margin-right: 15%;
-  margin-left: 15%;
-  list-style: none;
-  width: 150px;
-  margin: 0;
-  bottom: 49px; }
-
 .banner .carousel-indicators li {
-  position: relative;
-  flex: 0 1 auto;
   width: 6px;
   height: 6px;
-  margin-right: 3px;
-  margin-left: 3px;
-  text-indent: -999px;
   background-color: #fff;
   border: 1px solid #000;
   border-radius: 50%;
@@ -8388,7 +8400,7 @@ a:hover, a:focus, a:active {
     border-color: #000; }
 
 .product-wrapper {
-  padding: 50px 0; }
+  padding: 100px 0 50px 0; }
   .product-wrapper .all-product-btn.btn {
     font-size: 13px;
     text-transform: uppercase;
