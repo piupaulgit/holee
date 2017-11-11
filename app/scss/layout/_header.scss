@@ -1,18 +1,14 @@
 header{
 	padding: rem(30) rem(20) rem(30) rem(40);
 	background: $white;
-	@include media-breakpoint-down(md){
+	@include media-breakpoint-down(lg){
 		padding: 10px 20px;
 	}
 	@include media-breakpoint-down(sm){
 		padding: 0px 5px;
 	}
 	.top-search{
-		position: absolute;
-		right: 0;
-		top: 50%;
-		margin-top: -20px;
-		@include media-breakpoint-down(sm){
+		@include media-breakpoint-down(lg){
 			position: static;
 			margin-top: 6px;
 		}
@@ -35,11 +31,12 @@ header{
 			top: 0;
 			left: 0px;
 			z-index: 999;
-			@include media-breakpoint-down(md){
+			@include media-breakpoint-down(lg){
 				width: 115px;
+				position: static;
 			}
 			@include media-breakpoint-down(sm){
-				position: static;
+				
 			}
 		}
 		.navbar-toggler{
@@ -52,10 +49,6 @@ header{
 		}
 		&.navbar{
 			.navbar-nav{
-				margin-right: rem(35);
-				@include media-breakpoint-down(sm){
-					margin-right: 0px;
-				}
 				li{
 					&.nav-item{
 						&.active{
@@ -97,7 +90,8 @@ header{
 									padding: 5px 15px;
 								}
 								.dropdown-item.active, .dropdown-item:active{
-									background-color: $blue;
+									background-color: transparent;
+									color: #7d7d7d;
 								}
 							}
 							.dropdown-toggle{
@@ -110,10 +104,7 @@ header{
 									top: 10px;
 									right: -16px;
 									@include media-breakpoint-down(md){
-										right: -9px;
-									}
-									@include media-breakpoint-down(sm){
-										right: 3px;
+										right: -3px;
 									}
 								}
 							}
@@ -138,7 +129,7 @@ header{
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
-    @include media-breakpoint-down(sm){
+    @include media-breakpoint-down(lg){
 		width: 100%;
     }
 }
@@ -156,7 +147,7 @@ header{
     background-color: $blue;
     font-size:rem(13);
     color: $white;
-    @include media-breakpoint-down(sm){
+    @include media-breakpoint-down(md){
 		width: 100%;
 		padding-left: rem(20);
     }
@@ -193,3 +184,7 @@ header{
 .searchbox-open{
     width:100%;
 }
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; // remove the gap so it doesn't close
+ }

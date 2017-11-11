@@ -41,7 +41,12 @@ a:hover, a:focus, a:active{
             margin: 0;
             .banner-contet{
                 position: absolute;
-                top: 81px;
+                top: 50%;
+                transform: translateY(-50%);
+                -webkit-transform: translateY(-50%);
+                -moz-transform: translateY(-50%);
+                -o-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
                 left: 13%;
                 text-transform: uppercase;
                 text-align: left;
@@ -51,6 +56,8 @@ a:hover, a:focus, a:active{
                     margin: 0 0 20px;
                     font-weight: 900;
                     color: black;
+                    @include media-breakpoint-down(md){
+                    }
                 }
                 p{
                     font-size: 12px;
@@ -117,11 +124,16 @@ a:hover, a:focus, a:active{
             .carousel-caption {
                 .banner-contet {
                     left: 5%;
-                    top: 30px;
                     width: 400px;
+                    max-width: 100%;
+                    p{
+                        font-size: 15px;
+                        line-height: 20px;
+                    }
                     h3{
                         font-size: 20px;
-                        line-height: 21px;
+                        line-height: 1px;
+                        margin-bottom: 15px;
                     }
                     a.btn{
                         margin: 10px 0 0;
@@ -145,6 +157,26 @@ a:hover, a:focus, a:active{
                 }
             }
         }
+         @media screen and (max-width: 600px) {
+            .carousel-caption {
+                 .banner-contet {
+                    width: 300px;
+                    h3{
+                        font-size: rem(15);
+                        margin-bottom: 10px;
+                    }
+                    p{
+                        font-size: 10px;
+                        line-height: 15px;
+                        margin-bottom: 5px;
+                    }
+                     a.btn{
+                        margin-top: 0px;
+                     }
+                 }
+             }
+
+         }
     }
     .carousel-control-prev, .carousel-control-next{
         display: none;
