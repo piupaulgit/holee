@@ -7,24 +7,6 @@ header{
 	@include media-breakpoint-down(sm){
 		padding: 0px 5px;
 	}
-	.top-search{
-		@include media-breakpoint-down(lg){
-			position: static;
-			margin-top: 6px;
-		}
-		.searchbox-input::-webkit-input-placeholder {
-    	color: $white;
-		}
-		.searchbox-input:-moz-placeholder {
-		    color: $white;
-		}
-		.searchbox-input::-moz-placeholder {
-		    color: $white;
-		}
-		.searchbox-input:-ms-input-placeholder {
-		    color: $white;
-}
-	}
 	nav{
 		.navbar-brand{
 			position: absolute;
@@ -65,7 +47,7 @@ header{
 								font-weight: $font-weight__regular;
 								margin: 0px 20px;
 								&:hover{
-									color: $blue;
+									color: $black;
 								}
 								&.red{
 									color: red;
@@ -81,6 +63,13 @@ header{
 							}
 						}
 						&.dropdown{
+							&.show{
+								.dropdown-toggle{
+									&:after{
+										content: '\f068';
+									}
+								}
+							}
 						.dropdown-menu{
 								text-transform: uppercase;
 								color: #7d7d7d;
@@ -121,7 +110,7 @@ header{
     position:relative;
     min-width:50px;
     width:0%;
-    height:50px;
+    height:40px;
     float:right;
     overflow:hidden;
     -webkit-transition: all 0.3s;
@@ -129,9 +118,25 @@ header{
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
-    @include media-breakpoint-down(lg){
-		width: 100%;
+    @include media-breakpoint-down(md){
+    		width: 100%;
     }
+    .searchbox-input::-webkit-input-placeholder {
+    	color: $white;
+    	opacity: 1;
+		}
+		.searchbox-input:-moz-placeholder {
+		    color: $white;
+		    opacity: 1;
+		}
+		.searchbox-input::-moz-placeholder {
+		    color: $white;
+		    opacity: 1;
+		}
+		.searchbox-input:-ms-input-placeholder {
+		    color: $white;
+		    opacity: 1;
+		}
 }
 .searchbox-input{
     top:0;
@@ -153,6 +158,7 @@ header{
     }
 }
 .searchbox-open{
+	width: 195px;
 	.searchbox-input{
 		width: 100%;
 		padding-left: 20px;
@@ -181,10 +187,11 @@ header{
     	font-size: rem(17);
     }
 }
-.searchbox-open{
-    width:100%;
-}
 .dropdown:hover .dropdown-menu {
     display: block;
     margin-top: 0; // remove the gap so it doesn't close
  }
+
+header nav.navbar .navbar-nav li.nav-item.dropdown:hover .dropdown-toggle:after{
+	content: '\f068';
+}
