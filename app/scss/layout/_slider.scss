@@ -361,3 +361,102 @@ ul.products {
         }
     }
 }
+
+
+// inner banner
+.inner-banner{
+    padding-top: 80px;
+    position: relative;
+    @include media-breakpoint-down(lg){
+        padding-top: 50px;
+    }
+    &:before{
+        position: absolute;
+        top: 0;
+        left: 21%;
+        width: 195px;
+        height: 247px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        content: '';
+        background-image: url('../images/banner-before.png');
+    }
+    &:after{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: 286px;
+        width: 137px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url('../images/banner-after.png');
+        content: '';
+    }
+    h2{
+        font-weight: $font-weight__black;
+        color: $black;
+        font-size: 60px;
+        text-transform: uppercase;
+        position: relative;
+        display: inline-block;
+        @include media-breakpoint-down(lg){
+            font-size: rem(50);
+        }
+        @include media-breakpoint-down(md){
+            font-size: rem(30);
+        }
+        &:after{
+            height: 1px;
+            background: $black;
+            width: 50px;
+            right: -60px;
+            bottom:14px;
+            content: '';
+            position: absolute;
+        }
+    }
+    .right-inner-banner{
+        padding-top: rem(55);
+        padding-left: rem(45);
+        position: relative;
+        z-index: 9;
+        @include media-breakpoint-down(md){
+            padding-top: rem(10);
+            padding-left: 0px;
+        }
+    }
+    a{
+        display: table;
+        text-transform: uppercase;
+        font-weight:$font-weight__semiBold;
+        font-size: rem(15);
+        position: relative;
+        letter-spacing: 2px;
+        padding-right: 90px;
+        color: $black;
+        &:hover{
+            &:after{
+                right:-10px;
+            }
+        }
+        &:after{
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            content: '';
+            background: url(../images/link-arrow.png);
+            width: 77px;
+            height: 26px;
+            transition: all .5s;
+            -webkit-transition: all .5s;
+            -ms-transition: all .5s;
+            -o-transition: all .5s;
+            -moz-transition: all .5s;
+        }
+    }
+}

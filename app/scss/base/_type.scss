@@ -14,6 +14,10 @@ p{
 	color: $black;
 	margin-bottom: rem(30);
 	line-height: rem(30);
+	@include media-breakpoint-down(md){
+		font-size: rem(14);
+		margin-bottom: rem(10);
+	}
 }
 .no-margin{
 	margin: 0;
