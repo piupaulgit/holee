@@ -13,5 +13,11 @@ p{
 	font-size: rem(18);
 	color: $black;
 	margin-bottom: rem(30);
-	line-height: rem(25);
+	line-height: rem(30);
+}
+.no-margin{
+	margin: 0;
+}
+h2{
+	@include font-mixin(25px, #000, 28px, 800);
 }

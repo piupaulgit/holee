@@ -8210,7 +8210,17 @@ p {
   font-size: 1.8rem;
   color: #000000;
   margin-bottom: 3rem;
-  line-height: 2.5rem; }
+  line-height: 3rem; }
+
+.no-margin {
+  margin: 0; }
+
+h2 {
+  font-size: 25px;
+  color: #000;
+  line-height: 28px;
+  font-weight: 800;
+  font-family: "Poppins"; }
 
 header {
   padding: 3rem 2rem 3rem 4rem;
@@ -8850,6 +8860,38 @@ footer {
     @media (max-width: 767px) {
       .banner:after {
         display: none; } }
+
+.banner-sale p {
+  font-size: inherit;
+  color: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  font-family: "Poppins";
+  margin: 0 0 1rem; }
+
+.about-btm-content {
+  padding-bottom: 80px; }
+  .about-btm-content .row .col-md-4 {
+    margin-top: 25px; }
+    @media (max-width: 767px) {
+      .about-btm-content .row .col-md-4 {
+        border-bottom: 1px solid;
+        padding-bottom: 25px; } }
+    .about-btm-content .row .col-md-4:last-of-type {
+      border: none !important;
+      padding-bottom: 0; }
+  .about-btm-content small {
+    font-weight: 600; }
+  .about-btm-content h2 {
+    margin: 40px 0; }
+    @media (max-width: 767px) {
+      .about-btm-content h2 {
+        margin: 20px 0; } }
+  .about-btm-content a {
+    color: #1e00f7;
+    word-wrap: break-word; }
+    .about-btm-content a:hover {
+      color: #e40000; }
 
 html {
   font-size: 62.5%; }

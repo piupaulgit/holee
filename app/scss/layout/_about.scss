@@ -1,0 +1,38 @@
+.banner-sale{
+    p{
+        @include font-mixin(inherit, inherit, inherit, inherit);
+        margin: 0 0 1rem;
+    }
+}
+.about-btm-content{
+    padding-bottom: 80px;
+    .row{
+        .col-md-4{
+            margin-top: 25px;
+            @include media-breakpoint-down(sm){
+                border-bottom: 1px solid;
+                padding-bottom: 25px;
+            }
+            &:last-of-type{
+                border:none !important;
+                padding-bottom: 0;
+            }
+        }
+    }
+    small{
+        font-weight: 600;
+    }
+    h2{
+        margin: 40px 0;
+        @include media-breakpoint-down(sm){
+            margin: 20px 0;
+        }
+    }
+    a{
+        color: $blue;
+        word-wrap: break-word;
+        &:hover{
+            color: $red;
+        }
+    }
+}
